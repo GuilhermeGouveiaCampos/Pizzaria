@@ -12,3 +12,6 @@
 - Cadastro de clientes com persistência no LocalStorage.
 - Cadastro de itens do cardápio (pizzas).
 
+## v1.3.0 - 2025-06-19
+- Relatórios de clientes e vendas gerados em PDF.
+- Leitura dos dados do LocalStorage.
