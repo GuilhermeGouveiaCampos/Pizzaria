@@ -75,7 +75,7 @@ const Inicio = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Página Inicial</h1>
+      <h1 className={styles.title}>Painel Inicial de Pedidos</h1>
 
       <div className={styles.pieChartContainer}>
         <h2>Status dos Pedidos</h2>
@@ -89,7 +89,7 @@ const Inicio = () => {
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Cliente</th>
+                <th>Nome do Cliente</th>
                 <th>Ações</th>
               </tr>
             </thead>
@@ -108,6 +108,11 @@ const Inicio = () => {
                   </td>
                 </tr>
               ))}
+              {getFilteredPedidos("aguardando").length === 0 && (
+                <tr>
+                  <td colSpan="3">Nenhum pedido aguardando aceitação.</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
@@ -118,7 +123,7 @@ const Inicio = () => {
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Cliente</th>
+                <th>Nome do Cliente</th>
                 <th>Ações</th>
               </tr>
             </thead>
@@ -137,6 +142,11 @@ const Inicio = () => {
                   </td>
                 </tr>
               ))}
+              {getFilteredPedidos("pendente").length === 0 && (
+                <tr>
+                  <td colSpan="3">Nenhum pedido aguardando finalização.</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
@@ -147,7 +157,7 @@ const Inicio = () => {
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Cliente</th>
+                <th>Nome do Cliente</th>
               </tr>
             </thead>
             <tbody>
@@ -157,6 +167,11 @@ const Inicio = () => {
                   <td>{pedido.cliente}</td>
                 </tr>
               ))}
+              {getFilteredPedidos("completo").length === 0 && (
+                <tr>
+                  <td colSpan="2">Nenhum pedido concluído.</td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>
