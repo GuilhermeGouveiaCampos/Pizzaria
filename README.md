@@ -5,14 +5,12 @@ Este projeto simula um sistema de gerenciamento de pedidos para pizzaria, com fu
 - Login
 - Dashboard com gráfico de status de pedidos
 - Cadastro de clientes e itens
-- Relatórios em PDF
 - Armazenamento simulado via LocalStorage (sem necessidade de backend)
 
 ## Tecnologias Utilizadas
 
 - React
 - Chart.js
-- jsPDF
 - LocalStorage (para simulação de banco de dados)
 
 ## Gerência de Configuração (GCS)
@@ -24,7 +22,6 @@ O projeto possui:
 - Branches criados e finalizados via Pull Requests
 - Issues simuladas
 - Tags e Releases
-- Documentação completa em `/docs/Plano_de_GCS.md`
 
 ## Instruções para execução local
 
