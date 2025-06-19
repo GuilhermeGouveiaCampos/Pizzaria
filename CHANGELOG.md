@@ -15,3 +15,8 @@
 ## v1.3.0 - 2025-06-19
 - Relatórios de clientes e vendas gerados em PDF.
 - Leitura dos dados do LocalStorage.
+
+## v1.4.0 - 2025-06-19
+- Tela de login implementada.
+- Simulação de usuário fixo inicial via LocalStorage.
+
